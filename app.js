@@ -38,6 +38,8 @@ app.set('view engine', 'hbs');
 
 app.use("/public", express.static(path.join(__dirname, 'public')));
 
+app.set("/views",  express.static(path.join(__dirname, 'views')));
+
 app.use(express.json());
 
 // middleware

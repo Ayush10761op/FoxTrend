@@ -13,6 +13,19 @@ router.get('/', (req, res) => {
 router.get('/Advance', ensureAuthentication, (req, res) => {
     res.render("Advance")
 })
+
+router.get('/selectcar' , ensureAuthentication,(req , res) => {
+    res.render("selectcar")
+})
+
+router.get('/selecthouse' , ensureAuthentication,(req , res) => {
+    res.render("selecthouse")
+})
+
+router.get('/selectloan' , ensureAuthentication,(req , res) => {
+    res.render("selectloan")
+})
+
 let filesnaming;
 router.post('/Advance', async (req, res) => {
     const numCompanies = 1;
